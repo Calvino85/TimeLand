@@ -1,0 +1,377 @@
+fileFormatVersion: 2
+guid: a04f3f178472b4979a073c84c61851e1
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Benito Corriendo_0
+    21300002: Benito Corriendo_1
+    21300004: Benito Corriendo_2
+    21300006: Benito Corriendo_3
+    21300008: Benito Corriendo_4
+    21300010: Benito Corriendo_5
+    21300012: Benito Corriendo_6
+    21300014: Benito Corriendo_7
+    21300016: Benito Corriendo_8
+    21300018: Benito Corriendo_9
+    21300020: Benito Corriendo_10
+    21300022: Benito Corriendo_11
+    21300024: Benito Corriendo_12
+    21300026: Benito Corriendo_13
+    21300028: Benito Corriendo_14
+    21300030: Benito Corriendo_15
+    21300032: Benito Corriendo_16
+    21300034: Benito Corriendo_17
+    21300036: Benito Corriendo_18
+    21300038: Benito Corriendo_19
+    21300040: Benito Corriendo_20
+    21300042: Benito Corriendo_21
+    21300044: Benito Corriendo_22
+    21300046: Benito Corriendo_23
+    21300048: Benito Corriendo_24
+    21300050: Benito Corriendo_25
+    21300052: Benito Corriendo_26
+    21300054: Benito Corriendo_27
+    21300056: Benito Corriendo_28
+    21300058: Benito Corriendo_29
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Benito Corriendo_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 460
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Corriendo_1
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 460
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Corriendo_2
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 460
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Corriendo_3
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 460
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Corriendo_4
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 460
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Corriendo_5
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 460
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Corriendo_6
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 460
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Corriendo_7
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 460
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Corriendo_8
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 460
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Corriendo_9
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 460
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Corriendo_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 230
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Corriendo_11
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 230
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Corriendo_12
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 230
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Corriendo_13
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 230
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Corriendo_14
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 230
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Corriendo_15
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 230
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Corriendo_16
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 230
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Corriendo_17
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 230
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Corriendo_18
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 230
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Corriendo_19
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 230
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Corriendo_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Corriendo_21
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Corriendo_22
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Corriendo_23
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 0
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Corriendo_24
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Corriendo_25
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 0
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Corriendo_26
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 0
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Corriendo_27
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 0
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Corriendo_28
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Corriendo_29
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 0
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

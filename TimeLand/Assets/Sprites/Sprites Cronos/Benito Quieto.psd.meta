@@ -1,0 +1,366 @@
+fileFormatVersion: 2
+guid: 8aadd56f9c6d2405788e079cbfcd7d85
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Benito Quieto_0
+    21300002: Benito Quieto_1
+    21300004: Benito Quieto_2
+    21300006: Benito Quieto_3
+    21300008: Benito Quieto_4
+    21300010: Benito Quieto_5
+    21300012: Benito Quieto_6
+    21300014: Benito Quieto_7
+    21300016: Benito Quieto_8
+    21300018: Benito Quieto_9
+    21300020: Benito Quieto_10
+    21300022: Benito Quieto_11
+    21300024: Benito Quieto_12
+    21300026: Benito Quieto_13
+    21300028: Benito Quieto_14
+    21300030: Benito Quieto_15
+    21300032: Benito Quieto_16
+    21300034: Benito Quieto_17
+    21300036: Benito Quieto_18
+    21300038: Benito Quieto_19
+    21300040: Benito Quieto_20
+    21300042: Benito Quieto_21
+    21300044: Benito Quieto_22
+    21300046: Benito Quieto_23
+    21300048: Benito Quieto_24
+    21300050: Benito Quieto_25
+    21300052: Benito Quieto_26
+    21300054: Benito Quieto_27
+    21300056: Benito Quieto_28
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Benito Quieto_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 460
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Quieto_1
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 460
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Quieto_2
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 460
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Quieto_3
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 460
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Quieto_4
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 460
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Quieto_5
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 460
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Quieto_6
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 460
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Quieto_7
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 460
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Quieto_8
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 460
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Quieto_9
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 460
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Quieto_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 230
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Quieto_11
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 230
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Quieto_12
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 230
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Quieto_13
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 230
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Quieto_14
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 230
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Quieto_15
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 230
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Quieto_16
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 230
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Quieto_17
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 230
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Quieto_18
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 230
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Quieto_19
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 230
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Quieto_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Quieto_21
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Quieto_22
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Quieto_23
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 0
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Quieto_24
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Quieto_25
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 0
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Quieto_26
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 0
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Quieto_27
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Benito Quieto_28
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 0
+        width: 150
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

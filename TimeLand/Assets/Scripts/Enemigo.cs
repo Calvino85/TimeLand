@@ -3,8 +3,9 @@ using System.Collections;
 
 public class Enemigo : MonoBehaviour {
 
-	public float moveSpeed = 2f;		// The speed the enemy moves at.
-	public int HP = 2;					// How many times the enemy can be hit before it dies.
+	public GameObject padre;
+	public float moveSpeed = 1f;		// The speed the enemy moves at.
+	public int HP = 1;					// How many times the enemy can be hit before it dies.
 	public Sprite deadEnemy;			// A sprite of the enemy when it's dead.
 	public Sprite damagedEnemy;			// An optional sprite of the enemy when it's damaged.
 	public AudioClip[] deathClips;		// An array of audioclips that can play when the enemy dies.
@@ -17,12 +18,32 @@ public class Enemigo : MonoBehaviour {
 	private Transform frontCheck;		// Reference to the position of the gameobject used for checking if something is in front.
 	private bool dead = false;			// Whether or not the enemy is dead.
 	//private Score score;				// Reference to the Score script.
-	
-	
+
+	public Vector2 velocidad = new Vector2(2, 2);
+	public Vector2 direccion = new Vector2(-1, 0);
+		
+
+	void OnCollisionEnter2D(Collision2D coll) {
+		Debug.Log (coll.gameObject.tag);
+		/*if (coll.gameObject.tag == "Tubos") {
+			moveSpeed=moveSpeed*-1;
+		}*/
+		if (coll.gameObject.tag == "Player") {
+			//coll.gameObject.SendMessage("ApplyDamage", 10);
+			Debug.Log ("Dio cabeza");
+
+			HP--;
+		}
+		 
+		if(HP<1){
+			Destroy(padre,.5f);
+		}
+	}
+
 	void Awake()
 	{
 		// Setting up the references.
-		ren = transform.Find("Guardian 1").GetComponent<SpriteRenderer>();
+		//ren = transform.Find("Guardian 1").GetComponent<SpriteRenderer>();
 		//frontCheck = transform.Find("frontCheck").transform;
 		//score = GameObject.Find("Score").GetComponent<Score>();
 	}
@@ -30,10 +51,10 @@ public class Enemigo : MonoBehaviour {
 	void FixedUpdate ()
 	{
 		// Create an array of all the colliders in front of the enemy.
-		Collider2D[] frontHits = Physics2D.OverlapPointAll(frontCheck.position, 1);
+		//Collider2D[] frontHits = Physics2D.OverlapPointAll(frontCheck.position, 1);
 		
 		// Check each of the colliders.
-		foreach(Collider2D c in frontHits)
+		/*foreach(Collider2D c in frontHits)
 		{
 			// If any of the colliders is an Obstacle...
 			if(c.tag == "Obstacle")
@@ -42,11 +63,11 @@ public class Enemigo : MonoBehaviour {
 				Flip ();
 				break;
 			}
-		}
-		
+		}*/
+
 		// Set the enemy's velocity to moveSpeed in the x direction.
-		GetComponent<Rigidbody2D>().velocity = new Vector2(transform.localScale.x * moveSpeed, GetComponent<Rigidbody2D>().velocity.y);	
-		
+		//GetComponent<Rigidbody2D>().velocity = new Vector2(transform.localScale.x * moveSpeed, GetComponent<Rigidbody2D>().velocity.y);	
+		/*
 		// If the enemy has one hit point left and has a damagedEnemy sprite...
 		if(HP == 1 && damagedEnemy != null)
 			// ... set the sprite renderer's sprite to be the damagedEnemy sprite.
@@ -56,6 +77,7 @@ public class Enemigo : MonoBehaviour {
 		if(HP <= 0 && !dead)
 			// ... call the death function.
 			Death ();
+		*/
 	}
 	
 	public void Hurt()
@@ -63,7 +85,7 @@ public class Enemigo : MonoBehaviour {
 		// Reduce the number of hit points by one.
 		HP--;
 	}
-	
+	/*
 	void Death()
 	{
 		// Find all of the sprite renderers on this object and it's children.
@@ -108,8 +130,7 @@ public class Enemigo : MonoBehaviour {
 		// Instantiate the 100 points prefab at this point.
 		//Instantiate(hundredPointsUI, scorePos, Quaternion.identity);
 	}
-	
-	
+*/
 	public void Flip()
 	{
 		// Multiply the x component of localScale by -1.

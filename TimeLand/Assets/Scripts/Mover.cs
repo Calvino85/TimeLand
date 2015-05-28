@@ -17,12 +17,14 @@ public class Mover : MonoBehaviour {
 	public AudioClip[] taunts;				// Array of clips for when the player taunts.
 	public float tauntProbability = 50f;	// Chance of a taunt happening.
 	public float tauntDelay = 1f;			// Delay for when the taunt should happen.
-	
+	public float dir=0;
 	
 	private int tauntIndex;					// The index of the taunts array indicating the most recent taunt.
 	private Transform groundCheck;			// A position marking where to check if the player is grounded.
 	private bool grounded = false;			// Whether or not the player is grounded.
 	private Animator anim;					// Reference to the player's animator component.
+
+
 
 
 	void Awake()
@@ -45,28 +47,32 @@ public class Mover : MonoBehaviour {
 		if(Input.GetButtonDown("Jump") && grounded)
 			jump = true;
 
-		Debug.Log(grounded);
+		//Debug.Log(grounded);
 	}
 
 	void FixedUpdate ()
 	{
+
 		// Cache the horizontal input.
 		float h = Input.GetAxis("Horizontal");
 		//float v = Input.GetAxis("Vertical");
 		// The Speed animator parameter is set to the absolute value of the horizontal input.
 		//anim.SetFloat("Speed", Mathf.Abs(h));
 
-		if(h!=0&&jump==false){
+		if(h>0&&jump==false){
 			anim.Play("CorreIZQ-DER");
+			dir=1;
 		}else{
-			if(jump==false){
-				anim.Play("Quieto");
+			if(h<0&&jump==false){
+				anim.Play("CorreDER-IZQ");
+				dir=-1;
+			}else{
+				if(jump==false){
+					anim.Play("Quieto");
+					dir=1;
+				}
 			}
 		}
-
-		/*if(v>0&&jump==false){
-			jump = true;
-		}*/
 		
 		// If the player is changing direction (h has a different sign to velocity.x) or hasn't reached maxSpeed yet...
 		if(h * GetComponent<Rigidbody2D>().velocity.x < maxSpeed)
@@ -77,27 +83,20 @@ public class Mover : MonoBehaviour {
 		if(Mathf.Abs(GetComponent<Rigidbody2D>().velocity.x) > maxSpeed)
 			// ... set the player's velocity to the maxSpeed in the x axis.
 			GetComponent<Rigidbody2D>().velocity = new Vector2(Mathf.Sign(GetComponent<Rigidbody2D>().velocity.x) * maxSpeed, GetComponent<Rigidbody2D>().velocity.y);
-		
-		// If the input is moving the player right and the player is facing left...
-		if(h > 0 && !facingRight)
-			// ... flip the player.
-			Flip();
-		// Otherwise if the input is moving the player left and the player is facing right...
-		else if(h < 0 && facingRight)
-			// ... flip the player.
-			Flip();
-		else if(h==0)
+
+		if(h==0)
 			GetComponent<Rigidbody2D>().velocity = new Vector2(0f, GetComponent<Rigidbody2D>().velocity.y);
 		
 		// If the player should jump...
 		if(jump){
-			// Set the Jump animator trigger parameter.
-			anim.Play("SaltoIZQ-DER");
-			
-			// Play a random jump audio clip.
-			//int i = Random.Range(0, jumpClips.Length);
-			//AudioSource.PlayClipAtPoint(jumpClips[i], transform.position);
-			
+
+			if(dir==1){
+				// Set the Jump animator trigger parameter.
+				anim.SetTrigger("Jump");
+			}else{
+				anim.SetTrigger("Jump2");
+			}
+						
 			// Add a vertical force to the player.
 			GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, jumpForce));
 			

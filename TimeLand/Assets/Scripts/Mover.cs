@@ -18,14 +18,21 @@ public class Mover : MonoBehaviour {
 	public float tauntProbability = 50f;	// Chance of a taunt happening.
 	public float tauntDelay = 1f;			// Delay for when the taunt should happen.
 	public float dir=0;
-	
+	public int vida=10;
+
 	private int tauntIndex;					// The index of the taunts array indicating the most recent taunt.
 	private Transform groundCheck;			// A position marking where to check if the player is grounded.
 	private bool grounded = false;			// Whether or not the player is grounded.
 	private Animator anim;					// Reference to the player's animator component.
+	private float h;
 
+	public bool poderCaracol=false;
+	public bool poderBurbuja=false;
+	public bool poderRayo=false;
 
-
+	public string[] item=new string[30]; 
+	public int numItem=0;
+	public int puntoRetorno=0;
 
 	void Awake()
 	{
@@ -49,12 +56,62 @@ public class Mover : MonoBehaviour {
 
 		//Debug.Log(grounded);
 	}
+	void OnCollisionEnter2D(Collision2D coll) {
+		if(coll.gameObject.tag == "Enemy" && poderBurbuja==true){
+			vida--;
+		}
 
+		if(coll.gameObject.tag == "Reloj"){
+			vida++;
+			Destroy(coll.gameObject,.1f);
+		}
+
+		if(coll.gameObject.tag == "Poderes"){
+			Debug.Log (coll.gameObject.name);
+			Destroy(coll.gameObject,.1f);
+
+			if(coll.gameObject.name == "Caracol"){
+				poderCaracol=true;
+			}
+
+			if(coll.gameObject.name == "Burbuja"){
+				poderBurbuja=true;
+			}
+
+			if(coll.gameObject.name == "Rayo"){
+				poderRayo=true;
+			}
+		}
+
+		if(coll.gameObject.tag == "Escalera"){
+
+		}
+
+		if(coll.gameObject.tag == "Item"){
+			item[numItem]=coll.gameObject.name;
+			Destroy(coll.gameObject,.1f);
+			numItem++;
+		}
+
+		if(coll.gameObject.tag == "Base"){
+			if(coll.gameObject.name == "Base1"){
+				puntoRetorno=1;
+			}
+
+			if(coll.gameObject.name == "Base2"){
+				puntoRetorno=2;
+			}
+
+			if(coll.gameObject.name == "Base3"){
+				puntoRetorno=3;
+			}
+		}
+	}
 	void FixedUpdate ()
 	{
 
 		// Cache the horizontal input.
-		float h = Input.GetAxis("Horizontal");
+		h = Input.GetAxis("Horizontal");
 		//float v = Input.GetAxis("Vertical");
 		// The Speed animator parameter is set to the absolute value of the horizontal input.
 		//anim.SetFloat("Speed", Mathf.Abs(h));

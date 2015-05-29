@@ -33,6 +33,8 @@ public class Mover : MonoBehaviour {
 	public string[] item=new string[30]; 
 	public int numItem=0;
 	public int puntoRetorno=0;
+	public bool choque=false;
+	public bool sube=true;
 
 	void Awake()
 	{
@@ -57,12 +59,21 @@ public class Mover : MonoBehaviour {
 		//Debug.Log(grounded);
 	}
 	void OnCollisionEnter2D(Collision2D coll) {
-		if(coll.gameObject.tag == "Enemy" && poderBurbuja==true){
+		if(coll.gameObject.tag == "Enemy" && poderBurbuja==false){
 			vida--;
+
+			GetComponent<Rigidbody2D>().AddForce(Vector2.right * -h * 4000);
+
+			revisarMuerte();
 		}
 
 		if(coll.gameObject.tag == "Reloj"){
 			vida++;
+
+			if(vida > 10){
+				vida=10;
+			}
+
 			Destroy(coll.gameObject,.1f);
 		}
 
@@ -83,8 +94,12 @@ public class Mover : MonoBehaviour {
 			}
 		}
 
-		if(coll.gameObject.tag == "Escalera"){
+		if(coll.gameObject.tag == "Obstrupcion"){
+			GetComponent<Rigidbody2D>().AddForce(Vector2.right * -h * 4000);
+		}
 
+		if(coll.gameObject.tag == "Escalera"){
+			sube=true;
 		}
 
 		if(coll.gameObject.tag == "Item"){
@@ -107,29 +122,61 @@ public class Mover : MonoBehaviour {
 			}
 		}
 	}
+	/*
+	void OnTriggerEnter2D(Collision2D coll){
+		Debug.Log ("escaleras trigger ");
+
+		if(coll.gameObject.tag == "Escalera"){
+			sube=true;
+		}
+	}*/
+
 	void FixedUpdate ()
 	{
 
 		// Cache the horizontal input.
 		h = Input.GetAxis("Horizontal");
-		//float v = Input.GetAxis("Vertical");
+		float v = Input.GetAxis("Vertical");
 		// The Speed animator parameter is set to the absolute value of the horizontal input.
 		//anim.SetFloat("Speed", Mathf.Abs(h));
 
 		if(h>0&&jump==false){
-			anim.Play("CorreIZQ-DER");
+			if(poderRayo==false){
+				anim.Play("CorreIZQ-DER");
+			}else{
+				anim.Play("RayoCorreIZQ-DER");
+			}
 			dir=1;
 		}else{
 			if(h<0&&jump==false){
-				anim.Play("CorreDER-IZQ");
+				if(poderRayo==false){
+					anim.Play("CorreDER-IZQ");
+				}else{
+					Debug.Log("rayo");
+					anim.Play("RayoCorreDER-IZQ");
+				}
 				dir=-1;
 			}else{
-				if(jump==false){
+				if(jump==false&&sube==false){
 					anim.Play("Quieto");
 					dir=1;
 				}
 			}
 		}
+
+		if (v > 0 && sube == true) {
+			float x = (float)transform.position.x;
+			float y = (float)transform.position.y;
+			//transform.position = new Vector3 (x, y+0.3f, 0f);
+
+			GetComponent<Rigidbody2D> ().AddForce (Vector2.up * v * 15);
+
+			if (poderRayo == false) {
+				anim.Play ("BenitoSube");
+			} else {
+				anim.Play ("RayoSube");
+			}
+		} 
 		
 		// If the player is changing direction (h has a different sign to velocity.x) or hasn't reached maxSpeed yet...
 		if(h * GetComponent<Rigidbody2D>().velocity.x < maxSpeed)
@@ -172,5 +219,30 @@ public class Mover : MonoBehaviour {
 		Vector3 theScale = transform.localScale;
 		theScale.x *= -1;
 		transform.localScale = theScale;
+	}
+
+	void irBase(){
+		if (puntoRetorno == 0) {
+			transform.position = new Vector3 ((float) 3.315, (float) 9.259, 0);
+		} else {
+			if (puntoRetorno == 1) {
+				transform.position = new Vector3 (0, 0, 0);
+			} else {
+				if (puntoRetorno == 2) {
+					transform.position = new Vector3 (0, 0, 0);
+				}else{
+					if (puntoRetorno == 3) {
+						transform.position = new Vector3 (0, 0, 0);
+					}
+				}
+			}
+		}
+	}
+
+	void revisarMuerte(){
+		if (vida == 0) {
+
+		}
+
 	}
 }

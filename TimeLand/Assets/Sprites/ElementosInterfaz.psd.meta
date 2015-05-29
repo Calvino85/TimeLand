@@ -1,0 +1,465 @@
+fileFormatVersion: 2
+guid: 5bfbf4768e77b834dbb9c180dbb615ca
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ElementosInterfaz_0
+    21300002: ElementosInterfaz_1
+    21300004: ElementosInterfaz_2
+    21300006: ElementosInterfaz_3
+    21300008: ElementosInterfaz_4
+    21300010: ElementosInterfaz_5
+    21300012: ElementosInterfaz_6
+    21300014: ElementosInterfaz_7
+    21300016: ElementosInterfaz_8
+    21300018: ElementosInterfaz_9
+    21300020: ElementosInterfaz_10
+    21300022: ElementosInterfaz_11
+    21300024: ElementosInterfaz_12
+    21300026: ElementosInterfaz_13
+    21300028: ElementosInterfaz_14
+    21300030: ElementosInterfaz_15
+    21300032: ElementosInterfaz_16
+    21300034: ElementosInterfaz_17
+    21300036: ElementosInterfaz_18
+    21300038: ElementosInterfaz_19
+    21300040: ElementosInterfaz_20
+    21300042: ElementosInterfaz_21
+    21300044: ElementosInterfaz_22
+    21300046: ElementosInterfaz_23
+    21300048: ElementosInterfaz_24
+    21300050: ElementosInterfaz_25
+    21300052: ElementosInterfaz_26
+    21300054: ElementosInterfaz_27
+    21300056: ElementosInterfaz_28
+    21300058: ElementosInterfaz_29
+    21300060: ElementosInterfaz_30
+    21300062: ElementosInterfaz_31
+    21300064: ElementosInterfaz_32
+    21300066: ElementosInterfaz_33
+    21300068: ElementosInterfaz_34
+    21300070: ElementosInterfaz_35
+    21300072: ElementosInterfaz_36
+    21300074: ElementosInterfaz_37
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: ElementosInterfaz_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 2631
+        width: 310
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ElementosInterfaz_1
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 2631
+        width: 313
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ElementosInterfaz_2
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 2530
+        width: 310
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ElementosInterfaz_3
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 2530
+        width: 313
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ElementosInterfaz_4
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 2429
+        width: 310
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ElementosInterfaz_5
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 2429
+        width: 313
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ElementosInterfaz_6
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 2328
+        width: 310
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ElementosInterfaz_7
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 2328
+        width: 313
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ElementosInterfaz_8
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 2230
+        width: 310
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ElementosInterfaz_9
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 2230
+        width: 313
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ElementosInterfaz_10
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 2130
+        width: 310
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ElementosInterfaz_11
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 2024
+        width: 310
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ElementosInterfaz_12
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 2024
+        width: 310
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ElementosInterfaz_13
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 1926
+        width: 310
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ElementosInterfaz_14
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 1926
+        width: 310
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ElementosInterfaz_15
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 1825
+        width: 310
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ElementosInterfaz_16
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 1825
+        width: 310
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ElementosInterfaz_17
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 1724
+        width: 308
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ElementosInterfaz_18
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 1724
+        width: 308
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ElementosInterfaz_19
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 1626
+        width: 310
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ElementosInterfaz_20
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 1626
+        width: 310
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ElementosInterfaz_21
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 1525
+        width: 310
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ElementosInterfaz_22
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 1525
+        width: 310
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ElementosInterfaz_23
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 1422
+        width: 308
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ElementosInterfaz_24
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 1422
+        width: 308
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ElementosInterfaz_25
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 1324
+        width: 310
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ElementosInterfaz_26
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 1324
+        width: 310
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ElementosInterfaz_27
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 1223
+        width: 310
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ElementosInterfaz_28
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 1223
+        width: 310
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ElementosInterfaz_29
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 1088
+        width: 90
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ElementosInterfaz_30
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 1088
+        width: 90
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ElementosInterfaz_31
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 1088
+        width: 90
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ElementosInterfaz_32
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 1088
+        width: 87
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ElementosInterfaz_33
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 200
+        width: 270
+        height: 806
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ElementosInterfaz_34
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 200
+        width: 268
+        height: 808
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ElementosInterfaz_35
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 41
+        width: 93
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ElementosInterfaz_36
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 44
+        width: 87
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ElementosInterfaz_37
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 41
+        width: 93
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

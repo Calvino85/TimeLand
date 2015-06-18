@@ -25,29 +25,24 @@ public class Vida : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		changeSprite ();
-	
 	}
 
 	void changeSprite ()
 	{
-
-		//int vida=GameObject.Find ("Vida").GetComponent<Vida>().vida;
-
 		spriteRenderer.sprite = sprites[10-vida];
-
 	}
 
 
 	public void revisarMuerte() 
 	{
-
-		if(intentos==0){
-			//Codigo para reiniciar escena o juego
-		}
-
 		if(vida==0){
 			GameObject.Find ("Protagonista").GetComponent<Retorno>().irBase();
 			intentos--;
+			vida = 10;
+		}
+
+		if(intentos==0){
+			Application.LoadLevel(Application.loadedLevelName);
 		}
 	}
 }

@@ -9,31 +9,29 @@ public class Retorno : MonoBehaviour {
 	public GameObject base2;
 	public GameObject base3;
 
-
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+	void Awake()
+	{
+		base0 = GameObject.Find ("Base0");
+		base1 = GameObject.Find ("Base1");
+		base2 = GameObject.Find ("Base2");
+		base3 = GameObject.Find ("Base3");
 	}
 
 	void OnTriggerEnter2D(Collider2D coll) {
-		Debug.Log("entro retorno");
-		
 		if(coll.gameObject.tag == "Base"){
-			if(coll.gameObject.name == "Base1"){
+			if(coll.gameObject.name == "Base0" && puntoRetorno <= 0){
+				puntoRetorno=0;
+			}
+
+			if(coll.gameObject.name == "Base1" && puntoRetorno < 1){
 				puntoRetorno=1;
 			}
 			
-			if(coll.gameObject.name == "Base2"){
+			if(coll.gameObject.name == "Base2" && puntoRetorno < 2){
 				puntoRetorno=2;
 			}
 			
-			if(coll.gameObject.name == "Base3"){
+			if(coll.gameObject.name == "Base3" && puntoRetorno < 3){
 				puntoRetorno=3;
 			}
 		}

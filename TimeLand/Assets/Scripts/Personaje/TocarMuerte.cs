@@ -5,10 +5,8 @@ public class TocarMuerte : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D coll) {
 		if (coll.gameObject.tag == "Muerte") {
-			//Generar evento de reinicio
-			Debug.Log("Evento de Muerte");
-		}
-					
+			GameObject.Find("Vida").GetComponent<Vida>().vida = 0;
+			GameObject.Find("Vida").GetComponent<Vida>().revisarMuerte();
+		}			
 	}
-
 }

@@ -6,34 +6,48 @@ public class Poderes : MonoBehaviour {
 	public bool poderCaracol=false;
 	public bool poderBurbuja=false;
 	public bool poderRayo=false;
+	public float tiempo = 5;
+	public SpriteRenderer burbujaPoder;
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
-
-	void OnCollisionEnter2D(Collision2D coll) {
+	void OnTriggerEnter2D(Collider2D coll) {
 
 		if(coll.gameObject.tag == "Poderes"){
-			//Debug.Log (coll.gameObject.name);
-			Destroy(coll.gameObject,.1f);
-			
 			if(coll.gameObject.name == "Caracol"){
-				poderCaracol=true;
+				StartCoroutine(Caracol());
 			}
 			
 			if(coll.gameObject.name == "Burbuja"){
-				poderBurbuja=true;
+				StartCoroutine(Burbuja());
 			}
 			
 			if(coll.gameObject.name == "Rayo"){
-				poderRayo=true;
+				StartCoroutine(Rayo());
 			}
+
+			Destroy(coll.gameObject);
 		}
+	}
+
+	IEnumerator Caracol()
+	{
+		poderCaracol = true;
+		yield return new WaitForSeconds(tiempo);
+		poderCaracol = false;
+	}
+
+	IEnumerator Burbuja()
+	{
+		poderBurbuja = true;
+		burbujaPoder.enabled = true;
+		yield return new WaitForSeconds(tiempo);
+		poderBurbuja = false;
+		burbujaPoder.enabled = false;
+	}
+
+	IEnumerator Rayo()
+	{
+		poderRayo = true;
+		yield return new WaitForSeconds(tiempo);
+		poderRayo = false;
 	}
 }

@@ -16,22 +16,33 @@ public class TocarItem : MonoBehaviour {
 	
 	}
 
-	void OnCollisionEnter2D(Collision2D coll) {	
+	void OnTriggerEnter2D(Collider2D coll) {	
 		
 		if(coll.gameObject.tag == "Item"){
 			item[numItem]=coll.gameObject.name;
-			Destroy(coll.gameObject,.1f);
 			numItem++;
+			Destroy(coll.gameObject);
+			VerificarFinEscenario();
 		}
 						
 		if(coll.gameObject.tag == "Reloj"){
-			GameObject.Find ("Vida").GetComponent<Vida>().vida++;
-			
-			if(GameObject.Find ("Vida").GetComponent<Vida>().vida > 10){
-				GameObject.Find ("Vida").GetComponent<Vida>().vida=10;
+
+			if(GameObject.Find ("Vida").GetComponent<Vida>().vida <= 9){
+				GameObject.Find ("Vida").GetComponent<Vida>().vida++;
 			}
 			
-			Destroy(coll.gameObject,.1f);
+			Destroy(coll.gameObject);
+		}
+	}
+
+	void VerificarFinEscenario()
+	{
+		if(Application.loadedLevelName == "Cronos")
+		{
+			if(numItem == 5)
+			{
+				Application.LoadLevel("OMEGA FINAL");
+			}
 		}
 	}
 }

@@ -44,5 +44,12 @@ public class TocarItem : MonoBehaviour {
 				Application.LoadLevel("OMEGA FINAL");
 			}
 		}
+		if(Application.loadedLevelName == "OMEGA FINAL")
+		{
+			if(numItem == 3)
+			{
+				Application.LoadLevel("MUNDO PHI");
+			}
+		}
 	}
 }

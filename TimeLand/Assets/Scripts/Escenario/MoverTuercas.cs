@@ -9,24 +9,32 @@ public class MoverTuercas : MonoBehaviour {
 	private bool direccion;
 	public float velocidad;
 	private float posicionNueva;
+	private SuscriptorCaracol suscriptor;
 
 	// Use this for initialization
 	void Start () {
-
 		direccion = true;
-	
+		suscriptor = GetComponent<SuscriptorCaracol>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
+		float velocidadActual;
+		
+		if (suscriptor.caracol) {
+			velocidadActual = velocidad / 2f;
+		} else {
+			velocidadActual = velocidad;
+		}
+
 		if (direccion) {
 			if (moverX) {
-				posicionNueva = this.transform.position.x + velocidad * Time.deltaTime;
+				posicionNueva = this.transform.position.x + velocidadActual * Time.deltaTime;
 				this.transform.position = new Vector3(posicionNueva, this.transform.position.y, this.transform.position.z);
 
 			} else {
-				posicionNueva = this.transform.position.y + velocidad * Time.deltaTime;
+				posicionNueva = this.transform.position.y + velocidadActual * Time.deltaTime;
 				this.transform.position = new Vector3(this.transform.position.x, posicionNueva, this.transform.position.z);
 			}
 
@@ -35,11 +43,11 @@ public class MoverTuercas : MonoBehaviour {
 			}
 		} else {
 			if (moverX) {
-				posicionNueva = this.transform.position.x - velocidad * Time.deltaTime;
+				posicionNueva = this.transform.position.x - velocidadActual * Time.deltaTime;
 				this.transform.position = new Vector3(posicionNueva, this.transform.position.y, this.transform.position.z);
 				
 			} else {
-				posicionNueva = this.transform.position.y - velocidad * Time.deltaTime;
+				posicionNueva = this.transform.position.y - velocidadActual * Time.deltaTime;
 				this.transform.position = new Vector3(this.transform.position.x, posicionNueva, this.transform.position.z);
 			}
 			

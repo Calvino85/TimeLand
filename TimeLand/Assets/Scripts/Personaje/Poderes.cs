@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class Poderes : MonoBehaviour {
 
@@ -8,6 +9,43 @@ public class Poderes : MonoBehaviour {
 	public bool poderRayo=false;
 	public float tiempo = 5;
 	public SpriteRenderer burbujaPoder;
+
+	private List<GameObject> suscriptoresCaracol = new List<GameObject>();
+
+	public void suscribir(GameObject obj)
+	{
+		suscriptoresCaracol.Add (obj);
+	}
+
+	void avisarCaracolOn()
+	{
+		foreach (GameObject obj in suscriptoresCaracol)
+		{
+			if(obj != null)
+			{
+				obj.GetComponent<SuscriptorCaracol>().caracol = true;
+			}
+			else
+			{
+				Debug.Log ("Está entrando a donde no debería");
+			}
+		}
+	}
+
+	void avisarCaracolOff()
+	{
+		foreach (GameObject obj in suscriptoresCaracol)
+		{
+			if(obj != null)
+			{
+				obj.GetComponent<SuscriptorCaracol>().caracol = false;
+			}
+			else
+			{
+				Debug.Log ("Está entrando a donde no debería");
+			}
+		}
+	}
 
 	void OnTriggerEnter2D(Collider2D coll) {
 
@@ -31,8 +69,10 @@ public class Poderes : MonoBehaviour {
 	IEnumerator Caracol()
 	{
 		poderCaracol = true;
+		avisarCaracolOn();
 		yield return new WaitForSeconds(tiempo);
 		poderCaracol = false;
+		avisarCaracolOff();
 	}
 
 	IEnumerator Burbuja()

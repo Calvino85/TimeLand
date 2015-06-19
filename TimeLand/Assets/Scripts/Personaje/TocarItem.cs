@@ -21,6 +21,7 @@ public class TocarItem : MonoBehaviour {
 		if(coll.gameObject.tag == "Item"){
 			item[numItem]=coll.gameObject.name;
 			numItem++;
+			GameObject.Find ("Main Camera").GetComponent<MostrarIntentos>().mostrarItem(coll.gameObject.name);
 			Destroy(coll.gameObject);
 			VerificarFinEscenario();
 		}

@@ -5,7 +5,7 @@ public class MoverGuardian : MonoBehaviour {
 
 	public float posicionInicial;
 	public float posicionFinal;
-	private bool direccion;
+	public bool direccion;
 	public float velocidad;
 	private float posicionNueva;
 	private SuscriptorCaracol suscriptor;

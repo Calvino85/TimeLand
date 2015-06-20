@@ -47,7 +47,7 @@ public class TocarItem : MonoBehaviour {
 		}
 		if(Application.loadedLevelName == "OMEGA FINAL")
 		{
-			if(numItem == 3)
+			if(numItem == 2)
 			{
 				Application.LoadLevel("MUNDO PHI");
 			}

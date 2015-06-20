@@ -25,10 +25,6 @@ public class Poderes : MonoBehaviour {
 			{
 				obj.GetComponent<SuscriptorCaracol>().caracol = true;
 			}
-			else
-			{
-				Debug.Log ("Está entrando a donde no debería");
-			}
 		}
 	}
 
@@ -39,10 +35,6 @@ public class Poderes : MonoBehaviour {
 			if(obj != null)
 			{
 				obj.GetComponent<SuscriptorCaracol>().caracol = false;
-			}
-			else
-			{
-				Debug.Log ("Está entrando a donde no debería");
 			}
 		}
 	}

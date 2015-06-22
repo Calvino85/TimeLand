@@ -14,6 +14,7 @@ public class Enemigo : MonoBehaviour {
 			if (coll.gameObject.tag == "Player") {
 				StartCoroutine(QuitarVida ());
 			}
+
 		}
 	}
 
@@ -28,7 +29,11 @@ public class Enemigo : MonoBehaviour {
 
 	void revisarMuerte()
 	{
+
 		if(HP < 1){
+			if(padre.name=="Cucu"){
+				Application.LoadLevel("Cronos");
+			}
 			Destroy(padre);
 		}
 	}

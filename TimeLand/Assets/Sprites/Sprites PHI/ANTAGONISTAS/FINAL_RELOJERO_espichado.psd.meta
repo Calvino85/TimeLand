@@ -1,7 +1,10 @@
 fileFormatVersion: 2
 guid: f77b74479e45541d3802f2e6b4dcb835
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: FINAL_RELOJERO_espichado_0
+    21300002: FINAL_RELOJERO_espichado_1
+    21300004: FINAL_RELOJERO_espichado_2
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -42,6 +45,36 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: FINAL_RELOJERO_espichado_0
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 674
+        width: 35
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: FINAL_RELOJERO_espichado_1
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 698
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: FINAL_RELOJERO_espichado_2
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 558
+        width: 61
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

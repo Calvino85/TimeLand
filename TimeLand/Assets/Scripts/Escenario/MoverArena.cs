@@ -3,20 +3,23 @@ using System.Collections;
 
 public class MoverArena : MonoBehaviour {
 
-	public float[] positions;
-	private int actualPosition;
+	public float[] posiciones;
+	public Sprite[] arena;
+	public SpriteRenderer renderer;
+	private int posicionActual;
 	public bool invulnerable = false;
 	public float tiempoInvulnerabilidad = 1f;
 
 
 	void Start()
 	{
-		actualPosition = 0;
-		this.gameObject.transform.localPosition = new Vector3 (this.transform.localPosition.x, positions[actualPosition], this.transform.localPosition.z);
+		posicionActual = 0;
+		this.gameObject.transform.localPosition = new Vector3 (this.transform.localPosition.x, posiciones[posicionActual], this.transform.localPosition.z);
+		renderer.sprite = arena[posicionActual];
 	}
 
 	void OnCollisionEnter2D(Collision2D coll) {	
-		if(!invulnerable && actualPosition < positions.Length)
+		if(!invulnerable && posicionActual < posiciones.Length)
 		{
 			if (coll.gameObject.tag == "Player") {
 				StartCoroutine(CambiarPosicion ());
@@ -27,8 +30,9 @@ public class MoverArena : MonoBehaviour {
 	IEnumerator CambiarPosicion()
 	{
 		invulnerable = true;
-		actualPosition++;
-		this.gameObject.transform.localPosition = new Vector3 (this.transform.localPosition.x, positions[actualPosition], this.transform.localPosition.z);
+		posicionActual++;
+		this.gameObject.transform.localPosition = new Vector3 (this.transform.localPosition.x, posiciones[posicionActual], this.transform.localPosition.z);
+		renderer.sprite = arena[posicionActual];
 		yield return new WaitForSeconds(tiempoInvulnerabilidad);
 		invulnerable = false;
 	}

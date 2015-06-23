@@ -34,6 +34,10 @@ public class Enemigo : MonoBehaviour {
 			if(padre.name=="Cucu"){
 				Application.LoadLevel("Cronos");
 			}
+
+			if(padre.name=="Relojero Omega"){
+				GameObject.Find("Relojero Omega").GetComponent<MuerteRelojero>().animacionMuerteRelojero();
+			}
 			Destroy(padre);
 		}
 	}

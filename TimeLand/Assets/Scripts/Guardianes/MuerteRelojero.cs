@@ -23,18 +23,22 @@ public class MuerteRelojero : MonoBehaviour {
 	
 	void changeSprite ()
 	{
-		if(GameObject.Find ("Arena Relojero").GetComponent<MoverArena>()==true){
-			spriteRenderer.sprite = sprite1;
+		if(Application.loadedLevelName == "MUNDO PHI"){
+			if(GameObject.Find ("Arena Relojero").GetComponent<MoverArena>()==true){
+				spriteRenderer.sprite = sprite1;
+			}
 		}
 	}
 
 	public void animacionMuerteRelojero(){
-		
-		if(play==false){		
-			Animator animator=GameObject.Find("Relojero").GetComponent<Animator>();			
-			animator.Play("RelojeroRoto");
-			play=true;
-			GameObject.Find("Cucu").GetComponent<MostrarCucu>().mostrarCucu();
+
+		if (Application.loadedLevelName == "MUNDO PHI") {
+			if(play==false){		
+				Animator animator=GameObject.Find("Relojero").GetComponent<Animator>();			
+				animator.Play("RelojeroRoto");
+				play=true;
+				GameObject.Find("Cucu").GetComponent<MostrarCucu>().mostrarCucu();
+			}
 		}
 	}
 }

@@ -29,13 +29,19 @@ public class Vida : MonoBehaviour {
 
 	void changeSprite ()
 	{
-		spriteRenderer.sprite = sprites[10-vida];
+		if(vida <= 0){
+			spriteRenderer.sprite = sprites[10];
+		}
+		else{
+			spriteRenderer.sprite = sprites[10-vida];
+		}
+
 	}
 
 
 	public void revisarMuerte() 
 	{
-		if(vida==0){
+		if(vida<=0){
 			GameObject.Find ("Protagonista").GetComponent<Retorno>().irBase();
 			intentos--;
 			vida = 10;

@@ -7,18 +7,21 @@ public class TocarEnemy : MonoBehaviour {
 	public float tiempoInvulnerabilidad = 1f;
 
 	void OnCollisionStay2D(Collision2D coll) {
-		if(!invulnerable)
-		{
+		if(!invulnerable) {
 			if (coll.gameObject.tag == "EnemyPies" && GameObject.Find ("Protagonista").GetComponent<Poderes>().poderBurbuja == false) {
-				StartCoroutine(QuitarVida ());
+				if(coll.gameObject.transform.parent.gameObject.name == "Cucu") {
+					StartCoroutine(QuitarVida (5));
+				} else {
+					StartCoroutine(QuitarVida (1));
+				}
 			}
 		}
 	}
 
-	IEnumerator QuitarVida()
+	IEnumerator QuitarVida(int i)
 	{
 		invulnerable = true;
-		GameObject.Find("Vida").GetComponent<Vida>().vida--;
+		GameObject.Find("Vida").GetComponent<Vida>().vida -= i;
 		GameObject.Find("Vida").GetComponent<Vida>().revisarMuerte();
 		yield return new WaitForSeconds(tiempoInvulnerabilidad);
 		invulnerable = false;

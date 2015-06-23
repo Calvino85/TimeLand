@@ -20,6 +20,9 @@ public class PlayerControl : MonoBehaviour
 	private Animator anim;					// Reference to the player's animator component.
 	private bool doubleJump = false;
 	private bool stairs = false;
+	private bool rayo = false;
+
+	public float changeForce = 2f;
 
 	void Awake()
 	{
@@ -85,7 +88,7 @@ public class PlayerControl : MonoBehaviour
 			// ... set the player's velocity to the maxSpeed in the x axis.
 			rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x, Mathf.Sign(rigidbody2D.velocity.y) * maxSpeed);
 
-		if(!grounded && !stairs && facingRight)
+		if(!grounded && !stairs && facingRight && !rayo)
 		{
 			anim.ResetTrigger("Quieto");
 			anim.ResetTrigger("RayoCorreDER-IZQ");
@@ -98,7 +101,20 @@ public class PlayerControl : MonoBehaviour
 			anim.SetTrigger("SaltoIZQ-DER");
 			anim.ResetTrigger("BenitoSube");
 			anim.ResetTrigger("RayoSube");
-		} else if(!grounded && !stairs && !facingRight)
+		} else if(!grounded && !stairs && facingRight && rayo)
+		{
+			anim.ResetTrigger("Quieto");
+			anim.ResetTrigger("RayoCorreDER-IZQ");
+			anim.ResetTrigger("CorreDER-IZQ");
+			anim.ResetTrigger("RayoSaltoDER-IZQ");
+			anim.ResetTrigger("SaltoDER-IZQ");
+			anim.ResetTrigger("RayoCorreIZQ-DER");
+			anim.ResetTrigger("CorreIZQ-DER");
+			anim.SetTrigger("RayoSaltoIZQ-DER");
+			anim.ResetTrigger("SaltoIZQ-DER");
+			anim.ResetTrigger("BenitoSube");
+			anim.ResetTrigger("RayoSube");
+		} else if(!grounded && !stairs && !facingRight && !rayo)
 		{
 			anim.ResetTrigger("Quieto");
 			anim.ResetTrigger("RayoCorreDER-IZQ");
@@ -111,7 +127,20 @@ public class PlayerControl : MonoBehaviour
 			anim.ResetTrigger("SaltoIZQ-DER");
 			anim.ResetTrigger("BenitoSube");
 			anim.ResetTrigger("RayoSube");
-		} else if(grounded && facingRight && Mathf.Abs(rigidbody2D.velocity.x) > minVelocity)
+		} else if(!grounded && !stairs && !facingRight && rayo)
+		{
+			anim.ResetTrigger("Quieto");
+			anim.ResetTrigger("RayoCorreDER-IZQ");
+			anim.ResetTrigger("CorreDER-IZQ");
+			anim.SetTrigger("RayoSaltoDER-IZQ");
+			anim.ResetTrigger("SaltoDER-IZQ");
+			anim.ResetTrigger("RayoCorreIZQ-DER");
+			anim.ResetTrigger("CorreIZQ-DER");
+			anim.ResetTrigger("RayoSaltoIZQ-DER");
+			anim.ResetTrigger("SaltoIZQ-DER");
+			anim.ResetTrigger("BenitoSube");
+			anim.ResetTrigger("RayoSube");
+		} else if(grounded && facingRight && Mathf.Abs(rigidbody2D.velocity.x) > minVelocity && !rayo)
 		{
 			anim.ResetTrigger("Quieto");
 			anim.ResetTrigger("RayoCorreDER-IZQ");
@@ -124,7 +153,20 @@ public class PlayerControl : MonoBehaviour
 			anim.ResetTrigger("SaltoIZQ-DER");
 			anim.ResetTrigger("BenitoSube");
 			anim.ResetTrigger("RayoSube");
-		} else if(grounded && !facingRight && Mathf.Abs(rigidbody2D.velocity.x) > minVelocity)
+		} else if(grounded && facingRight && Mathf.Abs(rigidbody2D.velocity.x) > minVelocity && rayo)
+		{
+			anim.ResetTrigger("Quieto");
+			anim.ResetTrigger("RayoCorreDER-IZQ");
+			anim.ResetTrigger("CorreDER-IZQ");
+			anim.ResetTrigger("RayoSaltoDER-IZQ");
+			anim.ResetTrigger("SaltoDER-IZQ");
+			anim.SetTrigger("RayoCorreIZQ-DER");
+			anim.ResetTrigger("CorreIZQ-DER");
+			anim.ResetTrigger("RayoSaltoIZQ-DER");
+			anim.ResetTrigger("SaltoIZQ-DER");
+			anim.ResetTrigger("BenitoSube");
+			anim.ResetTrigger("RayoSube");
+		} else if(grounded && !facingRight && Mathf.Abs(rigidbody2D.velocity.x) > minVelocity && !rayo)
 		{
 			anim.ResetTrigger("Quieto");
 			anim.ResetTrigger("RayoCorreDER-IZQ");
@@ -137,7 +179,20 @@ public class PlayerControl : MonoBehaviour
 			anim.ResetTrigger("SaltoIZQ-DER");
 			anim.ResetTrigger("BenitoSube");
 			anim.ResetTrigger("RayoSube");
-		} else if(stairs && Mathf.Abs(rigidbody2D.velocity.y) > minVelocity)
+		} else if(grounded && !facingRight && Mathf.Abs(rigidbody2D.velocity.x) > minVelocity && rayo)
+		{
+			anim.ResetTrigger("Quieto");
+			anim.SetTrigger("RayoCorreDER-IZQ");
+			anim.ResetTrigger("CorreDER-IZQ");
+			anim.ResetTrigger("RayoSaltoDER-IZQ");
+			anim.ResetTrigger("SaltoDER-IZQ");
+			anim.ResetTrigger("RayoCorreIZQ-DER");
+			anim.ResetTrigger("CorreIZQ-DER");
+			anim.ResetTrigger("RayoSaltoIZQ-DER");
+			anim.ResetTrigger("SaltoIZQ-DER");
+			anim.ResetTrigger("BenitoSube");
+			anim.ResetTrigger("RayoSube");
+		} else if(stairs && Mathf.Abs(rigidbody2D.velocity.y) > minVelocity  && !rayo)
 		{
 			anim.ResetTrigger("Quieto");
 			anim.ResetTrigger("RayoCorreDER-IZQ");
@@ -150,6 +205,19 @@ public class PlayerControl : MonoBehaviour
 			anim.ResetTrigger("SaltoIZQ-DER");
 			anim.SetTrigger("BenitoSube");
 			anim.ResetTrigger("RayoSube");
+		} else if(stairs && Mathf.Abs(rigidbody2D.velocity.y) > minVelocity  && rayo)
+		{
+			anim.ResetTrigger("Quieto");
+			anim.ResetTrigger("RayoCorreDER-IZQ");
+			anim.ResetTrigger("CorreDER-IZQ");
+			anim.ResetTrigger("RayoSaltoDER-IZQ");
+			anim.ResetTrigger("SaltoDER-IZQ");
+			anim.ResetTrigger("RayoCorreIZQ-DER");
+			anim.ResetTrigger("CorreIZQ-DER");
+			anim.ResetTrigger("RayoSaltoIZQ-DER");
+			anim.ResetTrigger("SaltoIZQ-DER");
+			anim.ResetTrigger("BenitoSube");
+			anim.SetTrigger("RayoSube");
 		} else
 		{
 			anim.SetTrigger("Quieto");
@@ -193,5 +261,21 @@ public class PlayerControl : MonoBehaviour
 			rigidbody2D.gravityScale = 1f;
 			stairs = false;
 		}
+	}
+
+	public void rayoOn()
+	{
+		rayo = true;
+		moveForce = moveForce * changeForce;
+		moveUpDownForce = moveUpDownForce * changeForce;
+		jumpForce = jumpForce * changeForce;
+	}
+
+	public void rayoOff()
+	{
+		rayo = false;
+		moveForce = moveForce / changeForce;
+		moveUpDownForce = moveUpDownForce / changeForce;
+		jumpForce = jumpForce / changeForce;
 	}
 }

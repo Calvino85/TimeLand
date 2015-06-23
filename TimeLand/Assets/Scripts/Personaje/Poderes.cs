@@ -11,6 +11,12 @@ public class Poderes : MonoBehaviour {
 	public SpriteRenderer burbujaPoder;
 
 	private List<GameObject> suscriptoresCaracol = new List<GameObject>();
+	private PlayerControl player;
+
+	void Start()
+	{
+		player = GameObject.Find ("Protagonista").GetComponent<PlayerControl> ();
+	}
 
 	public void suscribir(GameObject obj)
 	{
@@ -37,6 +43,16 @@ public class Poderes : MonoBehaviour {
 				obj.GetComponent<SuscriptorCaracol>().caracol = false;
 			}
 		}
+	}
+
+	void avisarRayoOn()
+	{
+		player.rayoOn ();
+	}
+	
+	void avisarRayoOff()
+	{
+		player.rayoOff ();
 	}
 
 	void OnTriggerEnter2D(Collider2D coll) {
@@ -79,7 +95,9 @@ public class Poderes : MonoBehaviour {
 	IEnumerator Rayo()
 	{
 		poderRayo = true;
+		avisarRayoOn ();
 		yield return new WaitForSeconds(tiempo);
 		poderRayo = false;
+		avisarRayoOff ();
 	}
 }

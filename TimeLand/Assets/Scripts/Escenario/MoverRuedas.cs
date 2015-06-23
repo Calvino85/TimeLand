@@ -9,6 +9,7 @@ public class MoverRuedas : MonoBehaviour {
 	public GameObject tornillo2;
 	public GameObject tornillo3;
 	private SuscriptorCaracol suscriptor;
+	public float cambiarVelocidad = 2f;
 
 	void Start() {
 		suscriptor = GetComponent<SuscriptorCaracol>();
@@ -20,7 +21,7 @@ public class MoverRuedas : MonoBehaviour {
 		float velocidadActual;
 		
 		if (suscriptor.caracol) {
-			velocidadActual = velocidad / 2f;
+			velocidadActual = velocidad / cambiarVelocidad;
 		} else {
 			velocidadActual = velocidad;
 		}

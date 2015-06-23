@@ -9,6 +9,8 @@ public class MoverGuardian : MonoBehaviour {
 	public float velocidad;
 	private float posicionNueva;
 	private SuscriptorCaracol suscriptor;
+	public float cambiarVelocidad = 2f;
+
 	
 	// Use this for initialization
 	void Start () {
@@ -22,7 +24,7 @@ public class MoverGuardian : MonoBehaviour {
 		float velocidadActual;
 
 		if (suscriptor.caracol) {
-			velocidadActual = velocidad / 2f;
+			velocidadActual = velocidad / cambiarVelocidad;
 		} else {
 			velocidadActual = velocidad;
 		}
